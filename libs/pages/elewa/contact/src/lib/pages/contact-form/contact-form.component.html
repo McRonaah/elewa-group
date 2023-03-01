@@ -1,1 +1,32 @@
-<p>contact-form works!</p>
+<div>
+  <div></div>
+  <div>
+    <form action=""  ng-submit="submitForm()">
+      Your name
+      <input type="text" id="name" name="name" ng-model="formData.name" required><br><br>
+
+      <label for="name">Company name</label>
+      <input type="text" id="name" name="company name" ng-model="formData.company.name" required><br><br>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" ng-model="formData.email" required><br><br>
+
+      Select option
+      <select ng-model="myVar">
+        <option value=""></option>
+        <option value="CEO">CEO</option>
+        <option value="CTO">CTO</option>
+        <option value="Developer">Developer</option>
+        <option value="Farmer">Farmer</option>
+        <option value="Investor">Investor</option>
+  </select><br><br>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" ng-model="formData.message"></textarea><br><br>
+
+      <p>By clicking the submit button you agree to our <strong>Privacy Policy</strong> terms.
+        <button type="submit">Send Message</button>
+      </p>
+    </form>
+  </div>
+</div>
