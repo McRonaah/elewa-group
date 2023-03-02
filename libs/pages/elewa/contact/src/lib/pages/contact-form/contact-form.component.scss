@@ -1,55 +1,66 @@
-.container{
+.container {
   display: flex;
   flex-wrap: wrap;
   background-color: #292929;
   color: white;
-  height: 100vh;
   padding: 50px;
+  position: relative;
 }
 
 .section1{
   flex: 0 0 40%;
+  position: relative;
+  margin-bottom: 30px;
 }
 
-.section1 p{
+.section1 p {
   padding-top: 30px;
+  margin-bottom: 20px;
 }
 
-.form-section{
+.social-icons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  margin-left: 5px;
+}
+
+.form-section {
   flex: 0 0 60%;
 }
 
-.social-icons{
-  display: flex;
-  line-height: 1;
-  width: 100%;
+.social-icons .icon {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #fff;
 }
 
-.icon{
-  padding-right: 20px;
-}
-
-input{
+input {
   border: 2px, solid, #f0f0f0;
   border-radius: 4px;
   display: block;
   font-size: 12px;
   padding: 10px;
   width: 100%;
+  margin-bottom: 10px;
 }
 
-.input{
-  // border: 2px, solid, #f0f0f0;
+.input {
   border-radius: none;
   display: block;
   font-size: 12px;
   padding: 10px;
   width: 100%;
-
-  border: none;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 1px solid #cccccc;
-  outline: none;
+  margin-bottom: 10px;
 }
+
+p {
+  position: relative;
+}
+
+button[type="submit"] {
+  position: absolute;
+  right: 0;
+}
+
