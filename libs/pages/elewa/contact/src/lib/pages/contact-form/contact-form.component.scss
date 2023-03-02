@@ -69,6 +69,8 @@ button[type="submit"] {
     display: block;
     height: auto;
     padding: 20px;
+    margin: 20px;
+    padding-bottom: 50px;
   }
 
   .section1, .form-section {
@@ -76,6 +78,7 @@ button[type="submit"] {
   }
 
   .social-icons {
+    padding-top: 20px;
     margin-top: 20px;
     text-align: center;
   }
