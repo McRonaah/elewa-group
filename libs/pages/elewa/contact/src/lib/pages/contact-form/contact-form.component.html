@@ -1,6 +1,17 @@
-<div>
-  <div></div>
-  <div>
+<div class="container">
+  <div class="section1">
+    <h1>Contact</h1>
+    <p>Looking for a quick answer to your <br> question? Check out our <strong><a href='#'>FAQs</a></strong>.</p>
+    <br>
+    <p>For everything else drop us a line <br> and we'll get back to you</p>
+    <br>
+    <div class="social-icons">
+      <div class="icon"><i class="fab fa-facebook-f"></i></div>
+      <div class="icon"><i class="fab fa-instagram"></i></div>
+      <div class="icon"><i class="fab fa-linkedin-in"></i></div>
+    </div>
+  </div>
+  <div class="form-section">
     <form action=""  ng-submit="submitForm()">
       Your name
       <input type="text" id="name" name="name" ng-model="formData.name" required><br><br>
@@ -12,19 +23,19 @@
       <input type="email" id="email" name="email" ng-model="formData.email" required><br><br>
 
       Select option
-      <select ng-model="myVar">
+      <select ng-model="myVar" class="input">
         <option value=""></option>
         <option value="CEO">CEO</option>
         <option value="CTO">CTO</option>
         <option value="Developer">Developer</option>
         <option value="Farmer">Farmer</option>
         <option value="Investor">Investor</option>
-  </select><br><br>
+      </select><br><br>
 
       <label for="message">Message</label>
-      <textarea id="message" name="message" ng-model="formData.message"></textarea><br><br>
+      <textarea class="input" id="message" name="message" ng-model="formData.message"></textarea><br><br>
 
-      <p>By clicking the submit button you agree to our <strong>Privacy Policy</strong> terms.
+      <p>By clicking the submit button you agree to <br> our <strong>Privacy Policy</strong> terms.
         <button type="submit">Send Message</button>
       </p>
     </form>
